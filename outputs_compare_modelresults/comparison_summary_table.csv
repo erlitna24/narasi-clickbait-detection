@@ -1,0 +1,8 @@
+Model,Family,Experiment,Accuracy,Precision Macro,Recall Macro,F1 Macro,F1 Weighted,AUC ROC,Validation Macro F1,Validation Weighted F1,Inference ms/sample
+IndoBERT (Balance + Augment),IndoBERT,indobert_balance_augment,0.9466,0.9467,0.9403,0.9433,0.9464,,0.9472,0.950073199423669,
+IndoBERT (Balance),IndoBERT,indobert_balance,0.942,0.9423,0.9348,0.9383,0.9417,,0.957,0.9593380309624866,
+IndoBERT (Imbalance + Augment),IndoBERT,indobert_imbalance_augment,0.9374,0.9339,0.9339,0.9339,0.9374,,0.956,0.95828260163916,
+IndoBERT (Imbalance),IndoBERT,indobert_imbalance,0.9362,0.9347,0.9301,0.9323,0.936,,0.9495,0.952279839486548,
+SVM (LinearSVC + Calibrated),Classical,SVM (LinearSVC + Calibrated),0.9116,0.9165,0.8965,0.9046,,0.9611,,,0.0082
+Logistic Regression,Classical,Logistic Regression,0.9081,0.9109,0.8942,0.9011,,0.9614,,,0.0009
+Multinomial Naive Bayes,Classical,Multinomial Naive Bayes,0.8721,0.8808,0.8485,0.8597,,0.9401,,,0.0016

@@ -1,0 +1,184 @@
+{
+  "comparison_scope": {
+    "dataset": "CLICK-ID all_agree.csv",
+    "ranking_metric": "test macro F1",
+    "indobert_selection_metric": "validation macro F1",
+    "sample_level_comparability": false,
+    "reason": "Notebook 01 removes duplicate and short titles, while notebook 02 keeps all non-empty titles."
+  },
+  "models": [
+    {
+      "Model": "IndoBERT (Balance + Augment)",
+      "Family": "IndoBERT",
+      "Experiment": "indobert_balance_augment",
+      "Accuracy": 0.9466,
+      "Precision Macro": 0.9467,
+      "Recall Macro": 0.9403,
+      "F1 Macro": 0.9433,
+      "F1 Weighted": 0.9464,
+      "AUC ROC": null,
+      "Validation Macro F1": 0.9472,
+      "Validation Weighted F1": 0.950073199423669,
+      "Inference ms/sample": null,
+      "Confusion Matrix": [
+        [
+          513,
+          17
+        ],
+        [
+          29,
+          303
+        ]
+      ]
+    },
+    {
+      "Model": "IndoBERT (Balance)",
+      "Family": "IndoBERT",
+      "Experiment": "indobert_balance",
+      "Accuracy": 0.942,
+      "Precision Macro": 0.9423,
+      "Recall Macro": 0.9348,
+      "F1 Macro": 0.9383,
+      "F1 Weighted": 0.9417,
+      "AUC ROC": null,
+      "Validation Macro F1": 0.957,
+      "Validation Weighted F1": 0.9593380309624866,
+      "Inference ms/sample": null,
+      "Confusion Matrix": [
+        [
+          512,
+          18
+        ],
+        [
+          32,
+          300
+        ]
+      ]
+    },
+    {
+      "Model": "IndoBERT (Imbalance + Augment)",
+      "Family": "IndoBERT",
+      "Experiment": "indobert_imbalance_augment",
+      "Accuracy": 0.9374,
+      "Precision Macro": 0.9339,
+      "Recall Macro": 0.9339,
+      "F1 Macro": 0.9339,
+      "F1 Weighted": 0.9374,
+      "AUC ROC": null,
+      "Validation Macro F1": 0.956,
+      "Validation Weighted F1": 0.95828260163916,
+      "Inference ms/sample": null,
+      "Confusion Matrix": [
+        [
+          503,
+          27
+        ],
+        [
+          27,
+          305
+        ]
+      ]
+    },
+    {
+      "Model": "IndoBERT (Imbalance)",
+      "Family": "IndoBERT",
+      "Experiment": "indobert_imbalance",
+      "Accuracy": 0.9362,
+      "Precision Macro": 0.9347,
+      "Recall Macro": 0.9301,
+      "F1 Macro": 0.9323,
+      "F1 Weighted": 0.936,
+      "AUC ROC": null,
+      "Validation Macro F1": 0.9495,
+      "Validation Weighted F1": 0.952279839486548,
+      "Inference ms/sample": null,
+      "Confusion Matrix": [
+        [
+          507,
+          23
+        ],
+        [
+          32,
+          300
+        ]
+      ]
+    },
+    {
+      "Model": "SVM (LinearSVC + Calibrated)",
+      "Family": "Classical",
+      "Experiment": "SVM (LinearSVC + Calibrated)",
+      "Accuracy": 0.9116,
+      "Precision Macro": 0.9165,
+      "Recall Macro": 0.8965,
+      "F1 Macro": 0.9046,
+      "F1 Weighted": null,
+      "AUC ROC": 0.9611,
+      "Validation Macro F1": null,
+      "Validation Weighted F1": null,
+      "Inference ms/sample": 0.0082,
+      "Confusion Matrix": [
+        [
+          509,
+          20
+        ],
+        [
+          56,
+          275
+        ]
+      ]
+    },
+    {
+      "Model": "Logistic Regression",
+      "Family": "Classical",
+      "Experiment": "Logistic Regression",
+      "Accuracy": 0.9081,
+      "Precision Macro": 0.9109,
+      "Recall Macro": 0.8942,
+      "F1 Macro": 0.9011,
+      "F1 Weighted": null,
+      "AUC ROC": 0.9614,
+      "Validation Macro F1": null,
+      "Validation Weighted F1": null,
+      "Inference ms/sample": 0.0009,
+      "Confusion Matrix": [
+        [
+          505,
+          24
+        ],
+        [
+          55,
+          276
+        ]
+      ]
+    },
+    {
+      "Model": "Multinomial Naive Bayes",
+      "Family": "Classical",
+      "Experiment": "Multinomial Naive Bayes",
+      "Accuracy": 0.8721,
+      "Precision Macro": 0.8808,
+      "Recall Macro": 0.8485,
+      "F1 Macro": 0.8597,
+      "F1 Weighted": null,
+      "AUC ROC": 0.9401,
+      "Validation Macro F1": null,
+      "Validation Weighted F1": null,
+      "Inference ms/sample": 0.0016,
+      "Confusion Matrix": [
+        [
+          503,
+          26
+        ],
+        [
+          84,
+          247
+        ]
+      ]
+    }
+  ],
+  "best_classical_by_test_macro_f1": "SVM (LinearSVC + Calibrated)",
+  "best_validation_indobert_by_macro_f1": "IndoBERT (Balance)",
+  "highest_indobert_test_macro_f1": "IndoBERT (Balance + Augment)",
+  "final_deployed_narasi_model": "IndoBERT (Balance + Augment)",
+  "highest_overall_test_macro_f1": "IndoBERT (Balance + Augment)"
+}
