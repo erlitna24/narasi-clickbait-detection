@@ -1,0 +1,5 @@
+experiment,checkpoint,accuracy,precision_macro,recall_macro,f1_macro,f1_weighted,confusion_matrix,tn,fp,fn,tp
+indobert_imbalance,/content/drive/MyDrive/NLPAOL_V3/outputs_indobert/indobert_model/indobert_imbalance/checkpoint-862,0.9362,0.9347,0.9301,0.9323,0.936,"[[507, 23], [32, 300]]",507,23,32,300
+indobert_balance,/content/drive/MyDrive/NLPAOL_V3/outputs_indobert/indobert_model/indobert_balance/checkpoint-3710,0.942,0.9423,0.9348,0.9383,0.9417,"[[512, 18], [32, 300]]",512,18,32,300
+indobert_imbalance_augment,/content/drive/MyDrive/NLPAOL_V3/outputs_indobert/indobert_model/indobert_imbalance_augment/checkpoint-5172,0.9374,0.9339,0.9339,0.9339,0.9374,"[[503, 27], [27, 305]]",503,27,27,305
+indobert_balance_augment,/content/drive/MyDrive/NLPAOL_V3/outputs_indobert/indobert_model/indobert_balance_augment/checkpoint-2120,0.9466,0.9467,0.9403,0.9433,0.9464,"[[513, 17], [29, 303]]",513,17,29,303

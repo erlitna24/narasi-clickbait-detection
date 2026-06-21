@@ -1,0 +1,303 @@
+{
+  "targets": {
+    "accuracy": 0.85,
+    "f1_macro": 0.8
+  },
+  "summary_table": [
+    {
+      "Model": "IndoBERT (Balance+Aug)",
+      "Type": "IndoBERT",
+      "Experiment": "indobert_balance_augment",
+      "Accuracy": 0.9466,
+      "Precision": 0.9467,
+      "Recall": 0.9403,
+      "F1": 0.9433,
+      "AUC": null,
+      "val_f1": 0.9501,
+      "cm": [
+        [
+          513,
+          17
+        ],
+        [
+          29,
+          303
+        ]
+      ]
+    },
+    {
+      "Model": "IndoBERT (Balance)",
+      "Type": "IndoBERT",
+      "Experiment": "indobert_balance",
+      "Accuracy": 0.942,
+      "Precision": 0.9423,
+      "Recall": 0.9348,
+      "F1": 0.9383,
+      "AUC": null,
+      "val_f1": 0.9593,
+      "cm": [
+        [
+          512,
+          18
+        ],
+        [
+          32,
+          300
+        ]
+      ]
+    },
+    {
+      "Model": "IndoBERT (Imbalance+Aug)",
+      "Type": "IndoBERT",
+      "Experiment": "indobert_imbalance_augment",
+      "Accuracy": 0.9374,
+      "Precision": 0.9339,
+      "Recall": 0.9339,
+      "F1": 0.9339,
+      "AUC": null,
+      "val_f1": 0.9583,
+      "cm": [
+        [
+          503,
+          27
+        ],
+        [
+          27,
+          305
+        ]
+      ]
+    },
+    {
+      "Model": "IndoBERT (Imbalance)",
+      "Type": "IndoBERT",
+      "Experiment": "indobert_imbalance",
+      "Accuracy": 0.9362,
+      "Precision": 0.9347,
+      "Recall": 0.9301,
+      "F1": 0.9323,
+      "AUC": null,
+      "val_f1": 0.9523,
+      "cm": [
+        [
+          507,
+          23
+        ],
+        [
+          32,
+          300
+        ]
+      ]
+    },
+    {
+      "Model": "SVM (LinearSVC + Calibrated)",
+      "Type": "Classical",
+      "Experiment": "SVM (LinearSVC + Calibrated)",
+      "Accuracy": 0.9116,
+      "Precision": 0.9165,
+      "Recall": 0.8965,
+      "F1": 0.9046,
+      "AUC": 0.9611,
+      "val_f1": null,
+      "cm": [
+        [
+          509,
+          20
+        ],
+        [
+          56,
+          275
+        ]
+      ]
+    },
+    {
+      "Model": "Logistic Regression",
+      "Type": "Classical",
+      "Experiment": "Logistic Regression",
+      "Accuracy": 0.9081,
+      "Precision": 0.9109,
+      "Recall": 0.8942,
+      "F1": 0.9011,
+      "AUC": 0.9614,
+      "val_f1": null,
+      "cm": [
+        [
+          505,
+          24
+        ],
+        [
+          55,
+          276
+        ]
+      ]
+    },
+    {
+      "Model": "Multinomial Naive Bayes",
+      "Type": "Classical",
+      "Experiment": "Multinomial Naive Bayes",
+      "Accuracy": 0.8721,
+      "Precision": 0.8808,
+      "Recall": 0.8485,
+      "F1": 0.8597,
+      "AUC": 0.9401,
+      "val_f1": null,
+      "cm": [
+        [
+          503,
+          26
+        ],
+        [
+          84,
+          247
+        ]
+      ]
+    }
+  ],
+  "classical_detail": [
+    {
+      "model": "Multinomial Naive Bayes",
+      "accuracy": 0.8721,
+      "precision_macro": 0.8808,
+      "recall_macro": 0.8485,
+      "f1_macro": 0.8597,
+      "auc_roc": 0.9401,
+      "inference_ms_per_sample": 0.0016,
+      "confusion_matrix": [
+        [
+          503,
+          26
+        ],
+        [
+          84,
+          247
+        ]
+      ]
+    },
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.9081,
+      "precision_macro": 0.9109,
+      "recall_macro": 0.8942,
+      "f1_macro": 0.9011,
+      "auc_roc": 0.9614,
+      "inference_ms_per_sample": 0.0009,
+      "confusion_matrix": [
+        [
+          505,
+          24
+        ],
+        [
+          55,
+          276
+        ]
+      ]
+    },
+    {
+      "model": "SVM (LinearSVC + Calibrated)",
+      "accuracy": 0.9116,
+      "precision_macro": 0.9165,
+      "recall_macro": 0.8965,
+      "f1_macro": 0.9046,
+      "auc_roc": 0.9611,
+      "inference_ms_per_sample": 0.0082,
+      "confusion_matrix": [
+        [
+          509,
+          20
+        ],
+        [
+          56,
+          275
+        ]
+      ]
+    }
+  ],
+  "indobert_results": {
+    "indobert_imbalance": {
+      "experiment": "indobert_imbalance",
+      "setting_label": "Imbalance",
+      "accuracy": 0.9362,
+      "precision_macro": 0.9347,
+      "recall_macro": 0.9301,
+      "f1_macro": 0.9323,
+      "f1_weighted": 0.936,
+      "val_f1": 0.9523,
+      "confusion_matrix": [
+        [
+          507,
+          23
+        ],
+        [
+          32,
+          300
+        ]
+      ],
+      "source": "csv"
+    },
+    "indobert_balance": {
+      "experiment": "indobert_balance",
+      "setting_label": "Balance",
+      "accuracy": 0.942,
+      "precision_macro": 0.9423,
+      "recall_macro": 0.9348,
+      "f1_macro": 0.9383,
+      "f1_weighted": 0.9417,
+      "val_f1": 0.9593,
+      "confusion_matrix": [
+        [
+          512,
+          18
+        ],
+        [
+          32,
+          300
+        ]
+      ],
+      "source": "csv"
+    },
+    "indobert_imbalance_augment": {
+      "experiment": "indobert_imbalance_augment",
+      "setting_label": "Imbalance+Aug",
+      "accuracy": 0.9374,
+      "precision_macro": 0.9339,
+      "recall_macro": 0.9339,
+      "f1_macro": 0.9339,
+      "f1_weighted": 0.9374,
+      "val_f1": 0.9583,
+      "confusion_matrix": [
+        [
+          503,
+          27
+        ],
+        [
+          27,
+          305
+        ]
+      ],
+      "source": "csv"
+    },
+    "indobert_balance_augment": {
+      "experiment": "indobert_balance_augment",
+      "setting_label": "Balance+Aug",
+      "accuracy": 0.9466,
+      "precision_macro": 0.9467,
+      "recall_macro": 0.9403,
+      "f1_macro": 0.9433,
+      "f1_weighted": 0.9464,
+      "val_f1": 0.9501,
+      "confusion_matrix": [
+        [
+          513,
+          17
+        ],
+        [
+          29,
+          303
+        ]
+      ],
+      "source": "csv"
+    }
+  },
+  "best_classical": "SVM (LinearSVC + Calibrated)",
+  "best_indobert": "IndoBERT (Balance+Aug)",
+  "best_overall": "IndoBERT (Balance+Aug)"
+}

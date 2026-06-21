@@ -1,0 +1,12 @@
+backend
+outputs_indobert
+data_1
+outputs
+models
+models_2
+__pycache__
+*.ipynb
+*.safetensors
+*.bin
+*.pt
+*.pth

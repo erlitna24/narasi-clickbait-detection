@@ -1,0 +1,59 @@
+[
+  {
+    "model": "Multinomial Naive Bayes",
+    "accuracy": 0.8721,
+    "precision_macro": 0.8808,
+    "recall_macro": 0.8485,
+    "f1_macro": 0.8597,
+    "auc_roc": 0.9401,
+    "inference_ms_per_sample": 0.0016,
+    "confusion_matrix": [
+      [
+        503,
+        26
+      ],
+      [
+        84,
+        247
+      ]
+    ]
+  },
+  {
+    "model": "Logistic Regression",
+    "accuracy": 0.9081,
+    "precision_macro": 0.9109,
+    "recall_macro": 0.8942,
+    "f1_macro": 0.9011,
+    "auc_roc": 0.9614,
+    "inference_ms_per_sample": 0.0009,
+    "confusion_matrix": [
+      [
+        505,
+        24
+      ],
+      [
+        55,
+        276
+      ]
+    ]
+  },
+  {
+    "model": "SVM (LinearSVC + Calibrated)",
+    "accuracy": 0.9116,
+    "precision_macro": 0.9165,
+    "recall_macro": 0.8965,
+    "f1_macro": 0.9046,
+    "auc_roc": 0.9611,
+    "inference_ms_per_sample": 0.0082,
+    "confusion_matrix": [
+      [
+        509,
+        20
+      ],
+      [
+        56,
+        275
+      ]
+    ]
+  }
+]

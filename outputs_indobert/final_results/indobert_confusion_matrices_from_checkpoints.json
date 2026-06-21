@@ -1,0 +1,94 @@
+[
+  {
+    "experiment": "indobert_imbalance",
+    "checkpoint": "/content/drive/MyDrive/NLPAOL_V3/outputs_indobert/indobert_model/indobert_imbalance/checkpoint-862",
+    "accuracy": 0.9362,
+    "precision_macro": 0.9347,
+    "recall_macro": 0.9301,
+    "f1_macro": 0.9323,
+    "f1_weighted": 0.936,
+    "confusion_matrix": [
+      [
+        507,
+        23
+      ],
+      [
+        32,
+        300
+      ]
+    ],
+    "tn": 507,
+    "fp": 23,
+    "fn": 32,
+    "tp": 300
+  },
+  {
+    "experiment": "indobert_balance",
+    "checkpoint": "/content/drive/MyDrive/NLPAOL_V3/outputs_indobert/indobert_model/indobert_balance/checkpoint-3710",
+    "accuracy": 0.942,
+    "precision_macro": 0.9423,
+    "recall_macro": 0.9348,
+    "f1_macro": 0.9383,
+    "f1_weighted": 0.9417,
+    "confusion_matrix": [
+      [
+        512,
+        18
+      ],
+      [
+        32,
+        300
+      ]
+    ],
+    "tn": 512,
+    "fp": 18,
+    "fn": 32,
+    "tp": 300
+  },
+  {
+    "experiment": "indobert_imbalance_augment",
+    "checkpoint": "/content/drive/MyDrive/NLPAOL_V3/outputs_indobert/indobert_model/indobert_imbalance_augment/checkpoint-5172",
+    "accuracy": 0.9374,
+    "precision_macro": 0.9339,
+    "recall_macro": 0.9339,
+    "f1_macro": 0.9339,
+    "f1_weighted": 0.9374,
+    "confusion_matrix": [
+      [
+        503,
+        27
+      ],
+      [
+        27,
+        305
+      ]
+    ],
+    "tn": 503,
+    "fp": 27,
+    "fn": 27,
+    "tp": 305
+  },
+  {
+    "experiment": "indobert_balance_augment",
+    "checkpoint": "/content/drive/MyDrive/NLPAOL_V3/outputs_indobert/indobert_model/indobert_balance_augment/checkpoint-2120",
+    "accuracy": 0.9466,
+    "precision_macro": 0.9467,
+    "recall_macro": 0.9403,
+    "f1_macro": 0.9433,
+    "f1_weighted": 0.9464,
+    "confusion_matrix": [
+      [
+        513,
+        17
+      ],
+      [
+        29,
+        303
+      ]
+    ],
+    "tn": 513,
+    "fp": 17,
+    "fn": 29,
+    "tp": 303
+  }
+]

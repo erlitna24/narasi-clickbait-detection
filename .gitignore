@@ -1,0 +1,43 @@
+.vercel
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Vercel local files
+.vercel/
+**/.vercel/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset
+data_1/
+data/raw/
+
+# Model weights and checkpoints
+outputs_indobert/indobert_model/
+outputs_indobert/saved_model/
+outputs_indobert/final_deploy/
+checkpoint-*/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Temporary files
+*.zip
+*.log
+.DS_Store
+Thumbs.db
+
+# Generated classical model artifacts
+outputs/classical_models_all_agree/*.pkl
+# Generated classical model artifacts
+outputs/classical_models_all_agree/*.pkl

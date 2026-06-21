@@ -1,0 +1,17 @@
+Experiment: indobert_imbalance
+Checkpoint: /content/drive/MyDrive/NLPAOL_V3/outputs_indobert/indobert_model/indobert_imbalance/checkpoint-862
+
+               precision    recall  f1-score   support
+
+non-clickbait     0.9406    0.9566    0.9486       530
+    clickbait     0.9288    0.9036    0.9160       332
+
+     accuracy                         0.9362       862
+    macro avg     0.9347    0.9301    0.9323       862
+ weighted avg     0.9361    0.9362    0.9360       862
+
+
+Confusion Matrix:
+                 Pred Non-CB   Pred CB
+Actual Non-CB        507        23
+Actual CB            32        300
