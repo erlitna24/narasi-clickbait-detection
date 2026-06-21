@@ -1,5 +1,0 @@
-experiment,model,train_rows,val_f1,test_accuracy,test_precision,test_recall,test_f1,test_f1_macro
-indobert_imbalance,indobenchmark/indobert-base-p1,6889,0.9523,0.9362,0.9347,0.9301,0.936,0.9323
-indobert_balance,indobenchmark/indobert-base-p1,8474,0.9593,0.942,0.9423,0.9348,0.9417,0.9383
-indobert_imbalance_augment,indobenchmark/indobert-base-p1,13778,0.9583,0.9374,0.9339,0.9339,0.9374,0.9339
-indobert_balance_augment,indobenchmark/indobert-base-p1,16948,0.9501,0.9466,0.9467,0.9403,0.9464,0.9433
